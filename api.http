@@ -1,0 +1,37 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Novo Evento 2",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+
+POST http://localhost:3333/events/66c3284e-41a3-4942-ac61-4ed7b2abdf92/attendees
+Content-Type: application/json
+
+{
+    "name": "Samuel Nascimento",
+    "email": "samuel_nascimento2@gmail.com"
+}
+
+
+###
+
+GET http://localhost:3333/events/66c3284e-41a3-4942-ac61-4ed7b2abdf92
+
+
+###
+
+GET http://localhost:3333/attendees/2/badge
+
+###
+
+GET http://localhost:3333/attendees/5/check-in
+
+###
+
+GET http://localhost:3333/events/66c3284e-41a3-4942-ac61-4ed7b2abdf92/attendees?query=a
